@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+#login{
+
+    padding-bottom: 5%;
+    background-color: lightgrey;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 15%;
+    width: 30%;
+}
+
+.loginbtn{
+    float: right;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#mainContainer{
+  background-image: url("../images/cover2.jpg");
+
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15%;
+}
+
+.welcome{
+    margin-right: auto;
+    margin-left: auto;
+    background:rgba(0,0,0,.1);
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    position: relative;
+}
+
+.welcome h1{
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1305px){
+    .welcome h1{
+        font-size: 1.5em;
+    }
+
+    .welcome{
+        margin-top: 25%;    
+    }
+}
+
+@media screen and (max-width: 700px){
+    .welcome h1{
+        font-size: 1em;
+    }
+}
