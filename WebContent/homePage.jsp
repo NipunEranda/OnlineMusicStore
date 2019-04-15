@@ -6,11 +6,30 @@
 <meta charset="UTF-8">
 <title>Music Store</title>
 <link rel = "stylesheet" href = "css/mainStyles.css">
+<link rel = "stylesheet" href = "css/homePage.css">
+<style>
+.topnav .login {
+	display: none;
+}
+.topnav .register {
+	display: none;
+}
+.topnav .logout{
+	display: block;
+}
+
+.topnav.responsive .logout{
+	display: block;
+}
+</style>
 </head>
 <body>
-<%@ include file="components/header.jsp" %>
-<center>
-	<h1>Music Store</h1>
-</center>
+	<%@ include file="components/header.jsp"%>
+	<div id="mainContainer">
+		You're logged in successfully "<%= session.getAttribute("name") %>"
+	</div>
+	<div>
+		<%@ include file="components/footer.jsp"%>
+	</div>
 </body>
 </html>

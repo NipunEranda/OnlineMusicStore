@@ -1,34 +1,7 @@
 @charset "UTF-8";
-
-#login{
-
-    padding-bottom: 5%;
-    background-color: lightgrey;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 15%;
-    width: 30%;
-}
-
-.loginbtn{
-    float: right;
-}
-
 body, html {
   height: 100%;
   margin: 0;
-}
-
-#mainContainer{
-  background-image: url("../images/cover2.jpg");
-
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 15%;
 }
 
 .welcome{
