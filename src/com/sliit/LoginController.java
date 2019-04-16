@@ -28,7 +28,8 @@ public class LoginController extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/MusicStore", "root", "4212");
 
-			PreparedStatement ps = c.prepareStatement("select userName,isAdmin from Users where email=? or userName=? and password =?");
+			PreparedStatement ps = c.prepareStatement("select userName,isAdmin from Users where (email=? or userName=?) and password =?");
+			
 			ps.setString(1, un);
 			ps.setString(2, un);
 			ps.setString(3, pw);
@@ -38,19 +39,20 @@ public class LoginController extends HttpServlet {
 			while (rs.next()) {
 				String userName = rs.getString("userName");
 				int isAdmin = rs.getInt("isAdmin");
+				HttpSession session = request.getSession();
 
 				if (userName == "") {
 					userName = un;
-					HttpSession session = request.getSession();
 					session.setAttribute("name", un);
 				} else {
-					HttpSession session = request.getSession();
 					session.setAttribute("name", userName);
 				}
 
 				if (isAdmin == 0) {
+					session.setAttribute("isAdmin", 0);
 					response.sendRedirect("homePage.jsp");
 				} else {
+					session.setAttribute("isAdmin", 1);
 					response.sendRedirect("admin/adminHome.jsp");
 				}
 

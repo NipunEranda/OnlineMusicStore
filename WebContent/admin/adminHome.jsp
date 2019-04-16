@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Admin Portal</title>
 </head>
 <body>
-
+<%@ include file="components/header.jsp"%>
 </body>
 </html>

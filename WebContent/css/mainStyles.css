@@ -134,6 +134,10 @@ body {margin:0;font-family:Arial}
 .topnav .logout{
     display: none;
 }
+
+.topNav .admin{
+    display: none;
+}
 /*End of navigation decoration*/
 
 /*footer*/
