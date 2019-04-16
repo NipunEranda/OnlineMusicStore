@@ -14,7 +14,7 @@
 </style>
 </head>;;
 <body>
-	<%@ include file="components/header.jsp"%>
+	<%@ include file="../components/header.jsp"%>
 	<div id="mainContainer">
 		<div id="reg-page">
 		<center>

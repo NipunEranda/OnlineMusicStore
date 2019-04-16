@@ -9,8 +9,7 @@ h1{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 300px;
-  
+  padding-top: 300px
 }
 
 /*Navigation bar decorations*/
@@ -302,6 +301,11 @@ body {margin:0;font-family:Arial}
 }
 
 @media screen and (max-width: 1305px){
+
+    #mainContainer{
+        padding-top: 100px;
+}
+
     .topnav .topnav_left{
       margin-right: 15%;
       margin-left: 15%;

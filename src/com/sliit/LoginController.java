@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 import javax.servlet.annotation.WebServlet;
 
 @SuppressWarnings("serial")
@@ -37,6 +38,7 @@ public class LoginController extends HttpServlet {
 			ResultSet rs = ps.executeQuery();
 
 			while (rs.next()) {
+				
 				String userName = rs.getString("userName");
 				int isAdmin = rs.getInt("isAdmin");
 				HttpSession session = request.getSession();
