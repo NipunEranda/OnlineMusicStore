@@ -16,10 +16,6 @@
 	display: none;
 }
 
-.topnav .logout {
-	display: block;
-}
-
 .topnav.responsive .logout {
 	display: block;
 }

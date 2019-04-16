@@ -18,8 +18,8 @@
 				</tr>
 			</table>
 		</a> <a href="#news" id="tab">News</a> <a href="#contact" id="tab">Contact</a>
-		<a href="#about" id="tab">About</a><a href="../components/logout.jsp"
-			class="logout" id="tab">logout</a><a href="javascript:void(0);"
+		<a href="#about" id="tab">About</a><% if(session.getAttribute("name") == null){}else{ %><a href="../components/logout.jsp"
+			id="tab">logout</a><% } %><a href="javascript:void(0);"
 			style="font-size: 50px;" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 

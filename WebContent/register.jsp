@@ -12,17 +12,11 @@
 	display: none;
 }
 </style>
-</head>;;
+</head>
 <body>
 	<%@ include file="../components/header.jsp"%>
 	<div id="mainContainer">
-		<div id="reg-page">
-		<center>
-			<form action="" class = "reg-form">
-				<input type="text" name="fName" placeholder="Enter your First Name" />
-			</form>
-			</center>
-		</div>
+		<div id="reg-page"></div>
 	</div>
 	<div>
 		<%@ include file="components/footer.jsp"%>

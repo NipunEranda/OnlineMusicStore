@@ -4,12 +4,12 @@ h1{
 }
 
 #mainContainer{
-  background-image: url("../images/cover2.jpg");
-  height: 100%; 
+  background-image: url("../images/cover2.jpg"); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 300px
+  padding-top: 200px;
+  height: 1500px;
 }
 
 /*Navigation bar decorations*/
@@ -129,14 +129,6 @@ body {margin:0;font-family:Arial}
 .topnav table{
     font-size: 35px;
 }
-
-.topnav .logout{
-    display: none;
-}
-
-.topNav .admin{
-    display: none;
-}
 /*End of navigation decoration*/
 
 /*footer*/
@@ -213,6 +205,25 @@ body {margin:0;font-family:Arial}
         margin-right: 15px;
     }
 
+    .links a{
+        line-height: 30px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .links a:hover{
+        color: orange;
+        transition-duration: 0.3s;
+    }
+    footer{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+    
+
 /*end of footer*/
 
 /*Responsive*/
@@ -287,10 +298,6 @@ body {margin:0;font-family:Arial}
       line-height: 25px;
   }
 
-  .topnav.responsive .logout{
-      display: none;
-  }
-
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
   .topnav.responsive .dropdown .dropbtn {
@@ -298,13 +305,18 @@ body {margin:0;font-family:Arial}
     width: 100%;
     text-align: left;
   }
+
+  .footercontainer{
+      height: 500px;
+  }
+
 }
 
 @media screen and (max-width: 1305px){
 
     #mainContainer{
         padding-top: 100px;
-}
+    }
 
     .topnav .topnav_left{
       margin-right: 15%;

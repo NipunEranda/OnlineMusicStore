@@ -2,8 +2,6 @@
 
 #login{
     width: 25%;
-    margin-top: 0px;
-    margin-bottom: 15%;
     margin-left: auto;
     margin-right: auto;
     padding:3% 5% 5% 5%;
@@ -72,6 +70,14 @@
         padding:3% 5% 5% 5%;
         background:rgba(0,0,0,0.5);
         color: white;
+    }
+
+}
+
+@media screen and (max-width: 1305px){
+
+    #login{
+        margin-top: 100px;
     }
 
 }

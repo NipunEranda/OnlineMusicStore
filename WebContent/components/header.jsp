@@ -24,14 +24,29 @@
 		<%
 			if (session.getAttribute("isAdmin") == null && session.getAttribute("name") == null) {
 			} else if ((int) session.getAttribute("isAdmin") == 1) {
-		%><a
-			href="admin/adminHome.jsp" class="admin" id="tab">Admin Dash</a>
+		%><a href="admin/adminHome.jsp" class="admin" id="tab">Admin Dash</a>
 		<%
 			}
-		%><a href="register.jsp" class="register" id="tab">Sign Up</a> <a
-			href="login.jsp" class="login" id="tab">Sign In</a><a
-			href="components/logout.jsp" class="logout" id="tab">logout</a><a
-			href="javascript:void(0);" style="font-size: 50px;" class="icon"
+		%>
+		<%
+			if (session.getAttribute("name") == null) {
+		%><a href="register.jsp" class="register" id="tab">Sign Up</a>
+		<%
+			}
+		%>
+		<%
+			if (session.getAttribute("name") == null) {
+		%><a href="login.jsp" class="login" id="tab">Sign In</a>
+		<%
+			}
+		%>
+		<%
+			if (session.getAttribute("name") == null) {
+			} else {
+		%><a href="components/logout.jsp" id="tab">logout</a>
+		<%
+			}
+		%><a href="javascript:void(0);" style="font-size: 50px;" class="icon"
 			onclick="myFunction()">&#9776;</a>
 	</div>
 </body>
