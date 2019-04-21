@@ -18,11 +18,10 @@ body {margin:0;font-family:Arial}
 .topnav {
     
     overflow: hidden;
-    background:rgba(0,0,0,.8);
+    background:rgba(0,0,0,.7);
     
     position: fixed;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
 }
@@ -94,36 +93,14 @@ body {margin:0;font-family:Arial}
 }
 
 
-
-
-#sign{
-    float: right;
-}
-
-.nav{
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.nav_left{
-    float:left;
-    width: 10%;
-}
-
-.nav_right{
-    margin:0;
-    float: right;
-    width: 80%;
-}
-
 .topnav a{
     line-height: 55px;
     font-size: 20px;
 }
 
 .topnav_left{
-    margin-right: 30%;
-    margin-left: 20%;
+    margin-right: 25%;
+    margin-left: 23%;
 }
 
 .topnav table{
@@ -248,7 +225,7 @@ body {margin:0;font-family:Arial}
   }
 
   .topnav .topnav_left{
-      margin-left: 0px;
+      margin-left: 0%;
   }
 
     #footer-left{
@@ -312,15 +289,15 @@ body {margin:0;font-family:Arial}
 
 }
 
-@media screen and (max-width: 1305px){
+@media screen and (max-width: 1200px){
 
     #mainContainer{
         padding-top: 100px;
     }
 
     .topnav .topnav_left{
-      margin-right: 15%;
-      margin-left: 15%;
+      margin-right: 13%;
+      margin-left: 13%;
   }
 
     .footercontainer .social .ico-1{
@@ -339,7 +316,7 @@ body {margin:0;font-family:Arial}
 }
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 992px){
     .topnav .topnav_left{
       margin-right: 1%;
       margin-left: 4%;

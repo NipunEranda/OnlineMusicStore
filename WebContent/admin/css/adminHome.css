@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.topnav{
+    background-color: black;
+}
+
+.topnav .topnav_left{
+    margin-right: 30%;
+}
+
+@media screen and (max-width: 700px) {
+
+.topnav.responsive .admin{
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
