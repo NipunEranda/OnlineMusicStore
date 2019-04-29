@@ -6,25 +6,70 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/mainStyles.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/mainStyles.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="${pageContext.request.contextPath}/js/header.js"></script>
 </head>
 <body>
 
+	<%@ include file="../components/loginCheck.jsp"%>
+
 	<div class="topnav" id="myTopnav">
-		<a href="homePage.jsp" class="topnav_left">
+		<a
+			href="
+		<% if(session.getAttribute("name") == null){
+			%>
+		${pageContext.request.contextPath}/index.jsp
+		<%	
+		}else{ %>
+		${pageContext.request.contextPath}/homePage.jsp
+		<% } %>
+		"
+			class="topnav_left">
 			<table>
 				<tr>
-					<td><img src="images/icons/ico.jpg"
+					<td><img
+						src="${pageContext.request.contextPath}/images/icons/ico.jpg"
 						style="width: 50px; height: 50px;"></td>
 					<td>MuZy</td>
 				</tr>
 			</table>
-		</a> <a href="#news" id="tab">News</a> <a href="#contact" id="tab">Contact</a>
-		<a href="#about" id="tab">About</a>
+		</a>
+		<%
+			if (!(session.getAttribute("name") == null)
+					&& !(currentURI.equalsIgnoreCase("/OnlineMusicStore/homePage.jsp"))
+					&& (int) session.getAttribute("isAdmin") == 1) {
+		%>
+		<a class="stat" href="statistics.jsp" id="tab">Statistics</a> <a
+			class="conf" href="configure.jsp" id="tab">Configurations</a>
+		<%
+			} else {
+		%>
+		<a href="#about" id="tab" class="about">About</a> <a href="#contact"
+			id="tab" class="contact">Contact</a>
+
+		<%
+			if (session.getAttribute("name") == null) {
+				} else {
+		%>
+
+		<a href="#profile" id="tab"><i class="fa fa-user-circle"
+			style="font-size: 25px;">&nbsp;</i><%=session.getAttribute("name")%></a>
+
+		<%
+			}
+		%>
+		<%
+			}
+		%>
+
 		<%
 			if (session.getAttribute("isAdmin") == null && session.getAttribute("name") == null) {
 			} else if ((int) session.getAttribute("isAdmin") == 1) {
-		%><a href="admin/adminHome.jsp" class="admin" id="tab">Admin Dash</a>
+		%><a href="${pageContext.request.contextPath}/admin/adminHome.jsp"
+			class="admin" id="tab">Admin Dash</a>
 		<%
 			}
 		%>
@@ -40,14 +85,18 @@
 		<%
 			}
 		%>
+
 		<%
 			if (session.getAttribute("name") == null) {
 			} else {
-		%><a href="components/logout.jsp" id="tab">logout</a>
+		%><a class="logout"
+			href="${pageContext.request.contextPath}/components/logout.jsp"
+			id="tab">logout</a>
 		<%
 			}
 		%><a href="javascript:void(0);" style="font-size: 50px;" class="icon"
 			onclick="myFunction()">&#9776;</a>
 	</div>
+
 </body>
 </html>

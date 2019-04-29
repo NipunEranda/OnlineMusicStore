@@ -6,9 +6,36 @@
 		<display-name>LoginController</display-name>
 		<servlet-name>LoginController</servlet-name>
 		<servlet-class>com.sliit.LoginController</servlet-class>
+
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginController</servlet-name>
 		<url-pattern>/LoginController</url-pattern>
 	</servlet-mapping>
+
+    <servlet>
+    <description></description>
+        <display-name>GuestLoginController</display-name>
+		<servlet-name>GuestLoginController</servlet-name>
+        <servlet-class>com.sliit.GuestLoginController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GuestLoginController</servlet-name>
+		<url-pattern>/GuestLoginController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <description></description>
+        <display-name>UserSearch</display-name>
+		<servlet-name>UserSearch</servlet-name>
+        <servlet-class>com.sliit.UserSearch</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserSearch</servlet-name>
+		<url-pattern>/UserSearch</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
