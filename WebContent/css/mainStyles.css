@@ -278,9 +278,13 @@ body {margin:0;font-family:Arial}
   }
 
   .topnav .topnav_left{
+<<<<<<< HEAD
       float: left;
       margin-left: 0px;
       margin-right: 0px;
+=======
+      margin-left: 0%;
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
   }
 
     #footer-left{
@@ -370,4 +374,55 @@ body {margin:0;font-family:Arial}
 
 }
 
+<<<<<<< HEAD
 
+=======
+@media screen and (max-width: 1200px){
+
+    #mainContainer{
+        padding-top: 100px;
+    }
+
+    .topnav .topnav_left{
+      margin-right: 13%;
+      margin-left: 13%;
+  }
+
+    .footercontainer .social .ico-1{
+    width: 5%;
+    float: left;
+}
+
+.footercontainer .social .ico-2{
+    width: 5%;
+    float: left;
+}
+
+.footercontainer .social .ico-3{
+    width: 5%;
+    float: left;
+}
+}
+
+@media screen and (max-width: 992px){
+    .topnav .topnav_left{
+      margin-right: 1%;
+      margin-left: 4%;
+  }
+
+  .footercontainer .social .ico-1{
+    width: 10%;
+    float: left;
+}
+
+.footercontainer .social .ico-2{
+    width: 10%;
+    float: left;
+}
+
+.footercontainer .social .ico-3{
+    width: 10%;
+    float: left;
+}
+}
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d

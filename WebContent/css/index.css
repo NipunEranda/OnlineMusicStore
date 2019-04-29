@@ -96,11 +96,14 @@ body, html {
 }
 
 @media screen and (max-width: 1200px){
+<<<<<<< HEAD
 
     .welcome{
         height: 280px;
     }
 
+=======
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
     .welcome h1{
         font-size: 1.5em;
     }

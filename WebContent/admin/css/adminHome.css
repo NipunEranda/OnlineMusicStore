@@ -1,16 +1,22 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
 .maincontainer{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 200px;
+=======
+.topnav{
+    background-color: black;
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
 }
 
 .topnav .topnav_left{
     margin-right: 30%;
 }
 
+<<<<<<< HEAD
 .main-row1{
     width: 100%;
     margin-bottom: 7%;
@@ -81,12 +87,15 @@
 }
 
 
+=======
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
 @media screen and (max-width: 700px) {
 
 .topnav.responsive .admin{
     display: none;
 }
 
+<<<<<<< HEAD
 #left-btn{
         float: left;
         width: 50%;
@@ -117,3 +126,14 @@
     
 
 }
+=======
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
