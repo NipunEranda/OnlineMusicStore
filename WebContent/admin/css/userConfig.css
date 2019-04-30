@@ -33,12 +33,20 @@
     background-color: grey;
 }
 
+<<<<<<< HEAD
 .previewPanel #searchResultBtn{
+=======
+.previewPanel .searchResultBtn{
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
     width: 100%;
     text-align: left;
 }
 
+<<<<<<< HEAD
 .previewPanel #searchResultBtn:hover{
+=======
+.previewPanel .searchResultBtn:hover{
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
     cursor: pointer;
     background-color: lightgray;
     transition-duration: 0.4s;

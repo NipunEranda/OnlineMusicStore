@@ -37,6 +37,7 @@
 		<url-pattern>/UserSearch</url-pattern>
     </servlet-mapping>
 
+<<<<<<< HEAD
     <servlet>
     <description></description>
         <display-name>UpdateUsers</display-name>
@@ -60,5 +61,7 @@
         <servlet-name>RemoveUsers</servlet-name>
 		<url-pattern>/RemoveUsers</url-pattern>
     </servlet-mapping>
+=======
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 
 </web-app>

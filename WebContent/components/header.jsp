@@ -8,8 +8,16 @@
 <link rel="stylesheet" href="../css/mainStyles.css">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/mainStyles.css">
+<<<<<<< HEAD
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=======
+<<<<<<< HEAD
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=======
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 <script src="${pageContext.request.contextPath}/js/header.js"></script>
 </head>
 <body>
@@ -38,6 +46,10 @@
 			</table>
 		</a>
 		<%
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 			if (!(session.getAttribute("name") == null)
 					&& !(currentURI.equalsIgnoreCase("/OnlineMusicStore/homePage.jsp"))
 					&& (int) session.getAttribute("isAdmin") == 1) {
@@ -61,6 +73,26 @@
 		<%
 			}
 		%>
+<<<<<<< HEAD
+=======
+=======
+			String currentURI = request.getRequestURI();
+			if (currentURI.equalsIgnoreCase("/OnlineMusicStore/admin/adminHome.jsp")) {
+		%>
+		<a href="statistics.jsp" id="tab">Statistics</a> <a
+			href="configure.jsp" id="tab">Configurations</a>
+		<%
+			} else {
+		%>
+		<a href="#about" id="tab">About</a> <a href="#contact" id="tab">Contact</a>
+		
+		<% if(session.getAttribute("name") == null){}else{ %>
+		
+		<a href="#profile" id="tab"><%=session.getAttribute("name")%></a>
+		
+		<% } %>
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 		<%
 			}
 		%>
@@ -89,14 +121,57 @@
 		<%
 			if (session.getAttribute("name") == null) {
 			} else {
+<<<<<<< HEAD
 		%><a class="logout"
 			href="${pageContext.request.contextPath}/components/logout.jsp"
+=======
+<<<<<<< HEAD
+		%><a class="logout"
+			href="${pageContext.request.contextPath}/components/logout.jsp"
+=======
+		%><a href="${pageContext.request.contextPath}/components/logout.jsp"
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 			id="tab">logout</a>
 		<%
 			}
 		%><a href="javascript:void(0);" style="font-size: 50px;" class="icon"
 			onclick="myFunction()">&#9776;</a>
 	</div>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+	
+			<%
+			if (currentURI.equalsIgnoreCase("/OnlineMusicStore/homePage.jsp")
+					&& (int) session.getAttribute("isAdmin") == 1) {
+		%>
+		<style>
+.topnav .topnav_left {
+	margin-left: 20%;
+	margin-right: 23%;
+}
+
+@media screen and (max-width: 1200px) {
+	.topnav .topnav_left {
+		margin-left: 0%;
+		margin-right: 9%;
+	}
+	.topnav a {
+		font-size: 17px;
+	}
+}
+</style>
+
+		<%
+			}
+		%>
+	
+	
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 </body>
 </html>

@@ -5,6 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Portal</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 <%@ include file="../components/header.jsp"%>
 <link rel="stylesheet" href="css/mainStyles.css">
 <link rel="stylesheet" href="css/adminHome.css">
@@ -41,5 +45,20 @@
 			<div class="statistics" id="right-btn" onclick="linkPush('stat')">Statistics</div>
 		</div>
 	</div>
+<<<<<<< HEAD
+=======
+=======
+<link rel="stylesheet" href="css/adminHome.css">
+<style>
+.topnav .admin{
+	display: none;	
+}
+</style>
+
+</head>
+<body>
+<%@ include file="../components/header.jsp"%>
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 </body>
 </html>

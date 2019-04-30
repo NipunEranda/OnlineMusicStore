@@ -42,7 +42,11 @@ public class UserSearch extends HttpServlet {
 
 		String name = request.getParameter("name");
 		String uName = request.getParameter("userName");
+<<<<<<< HEAD
 		String uEmail = request.getParameter("email");
+=======
+		String email = request.getParameter("email");
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 
 		ResultSet result = null;
 
@@ -50,6 +54,7 @@ public class UserSearch extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/MusicStore", "root", "4212");
 
+<<<<<<< HEAD
 			if (name.isEmpty() && uName.isEmpty() && uEmail.isEmpty()) {
 				out.println("Please enter a value");
 			} else if (name.isEmpty() && uEmail.isEmpty()) {
@@ -67,21 +72,53 @@ public class UserSearch extends HttpServlet {
 			} else if (uEmail.isEmpty()) {
 				PreparedStatement ps = c.prepareStatement(
 						"select * from Users where userName LIKE '%" + uName + "%' and firstName LIKE '" + name + "%'");
+=======
+			if (name.isEmpty() && uName.isEmpty() && email.isEmpty()) {
+				out.println("Please enter a value");
+			} else if (name.isEmpty() && email.isEmpty()) {
+				PreparedStatement ps = c.prepareStatement("select * from Users where userName = '" + uName + "'");
+				ResultSet rs = ps.executeQuery();
+				result = rs;
+			} else if (name.isEmpty() && uName.isEmpty()) {
+				PreparedStatement ps = c.prepareStatement("select * from Users where email = '" + email + "'");
+				ResultSet rs = ps.executeQuery();
+				result = rs;
+			} else if (email.isEmpty() && uName.isEmpty()) {
+				PreparedStatement ps = c.prepareStatement("select * from Users where firstName LIKE '" + name + "%'");
+				ResultSet rs = ps.executeQuery();
+				result = rs;
+			} else if (email.isEmpty()) {
+				PreparedStatement ps = c.prepareStatement(
+						"select * from Users where userName = '" + uName + "' and firstName LIKE '" + name + "%'");
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 				ResultSet rs = ps.executeQuery();
 				result = rs;
 			} else if (name.isEmpty()) {
 				PreparedStatement ps = c.prepareStatement(
+<<<<<<< HEAD
 						"select * from Users where userName LIKE '%" + uName + "%' and email LIKE '" + uEmail + "%'");
+=======
+						"select * from Users where userName = '" + uName + "' and email = '" + email + "'");
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 				ResultSet rs = ps.executeQuery();
 				result = rs;
 			} else if (uName.isEmpty()) {
 				PreparedStatement ps = c.prepareStatement(
+<<<<<<< HEAD
 						"select * from Users where firstName LIKE '" + name + "%' and email LIKE '" + uEmail + "%'");
 				ResultSet rs = ps.executeQuery();
 				result = rs;
 			} else if (!(name.isEmpty() && uName.isEmpty() && uEmail.isEmpty())) {
 				PreparedStatement ps = c.prepareStatement("select * from Users where firstName LIKE '" + name
 						+ "%' and userName = '" + uName + "' and email = '" + uEmail + "'");
+=======
+						"select * from Users where firstName LIKE '" + name + "%' and email = '" + email + "'");
+				ResultSet rs = ps.executeQuery();
+				result = rs;
+			} else if (!(name.isEmpty() && uName.isEmpty() && email.isEmpty())) {
+				PreparedStatement ps = c.prepareStatement("select * from Users where firstName LIKE '" + name
+						+ "%' and userName = '" + uName + "' and email = '" + email + "'");
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 				ResultSet rs = ps.executeQuery();
 				result = rs;
 			}

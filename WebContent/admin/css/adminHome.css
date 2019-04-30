@@ -1,16 +1,31 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 .maincontainer{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 200px;
+<<<<<<< HEAD
+=======
+=======
+.topnav{
+    background-color: black;
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 }
 
 .topnav .topnav_left{
     margin-right: 30%;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 .main-row1{
     width: 100%;
     margin-bottom: 7%;
@@ -81,12 +96,21 @@
 }
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 @media screen and (max-width: 700px) {
 
 .topnav.responsive .admin{
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
 #left-btn{
         float: left;
         width: 50%;
@@ -117,3 +141,17 @@
     
 
 }
+<<<<<<< HEAD
+=======
+=======
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
+>>>>>>> 3a732b77184f245fdb915a58589156206e3a5c2d
+>>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
