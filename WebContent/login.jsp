@@ -24,10 +24,10 @@
 			<form action="LoginController" method="post">
 				<center>
 					<input type="text" name="email"
-						placeholder="email address or Username" /><br /> <br />
-					<input type="password" name="password" placeholder="password" />
+						placeholder="email address or Username" /><br /> <br /> <input
+						type="password" name="password" placeholder="password" />
 				</center>
-				<br /> <br /><input type="checkbox" name="remember" checked>Remember
+				<br /> <br /> <input type="checkbox" name="remember" checked>Remember
 				Me <input type="submit" name="submit" value="Login" class="loginbtn">
 				<br /> <br />
 				<hr />

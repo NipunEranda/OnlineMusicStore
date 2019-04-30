@@ -5,20 +5,47 @@
 <head>
 <meta charset="UTF-8">
 <title>Music Store</title>
-<link rel="stylesheet" href="css/mainStyles.css">
+<%@ include file="components/header.jsp"%>
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/bgslider.css">
 </head>
 </head>
 <body>
-	<%@ include file="components/header.jsp"%>
 	<div id="mainContainer">
-		<div class="coverPage"></div>
+		<ul class="cb-slideshow">
+			<li><span>Image 01</span></li>
+			<li><span>Image 02</span></li>
+			<li><span>Image 03</span></li>
+			<li><span>Image 04</span></li>
+			<li><span>Image 05</span></li>
+			<li><span>Image 06</span></li>
+		</ul>
 
 		<div class="welcome">
-		<h1>Music For Everyone</h1>
+			<div>
+				<h1>Music For Everyone</h1>
+				<br />
+				<h5>
+					MuZy gives you instant access to millions of Albums from old
+					favorites to the latest hits.<br /> Just browse and purchase your
+					desired Music Albums.
+				</h5>
+			</div>
+			<br />
+			<div class="btnset">
+				<div class="logbtn" onclick="location.href='login.jsp'">Login</div>
+				<div class="regbtn" onclick="location.href='register.jsp'">Register</div>
+				<form action="GuestLoginController" method="post" name="guestLogin">
+					<div class="guestbtn" name="guest"
+						onclick="document.forms['guestLogin'].submit();">Surf as a
+						Guest</div>
+				</form>
+				
+			</div>
 		</div>
+
 	</div>
-	<div>
+	<div class="footer">
 		<%@ include file="components/footer.jsp"%>
 	</div>
 </body>

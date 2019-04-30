@@ -5,8 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Music Store</title>
+<%@ include file="../components/header.jsp"%>
 <link rel="stylesheet" href="css/mainStyles.css">
 <link rel="stylesheet" href="css/homePage.css">
+
+	<%
+		if (session.getAttribute("isAdmin") != null && (int)session.getAttribute("isAdmin") == 1) {
+	%>
+		<link rel="stylesheet" href="admin/css/adminHomePage.css">
+	<%
+		}
+	%>
+
 <style>
 .topnav .login {
 	display: none;
@@ -22,9 +32,6 @@
 </style>
 </head>
 <body>
-
-	<%@ include file="../components/loginCheck.jsp"%>
-	<%@ include file="../components/header.jsp"%>
 	<div id="mainContainer">
 		You're logged in successfully "<%=session.getAttribute("name")%>"
 	</div>

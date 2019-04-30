@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#mainContainer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.panel{
+    margin-top: 5%;
+}
+
+.optionPanel{
+    float: left;
+    width: 30%;
+    padding: 2%;
+    background-color: red;
+}
+
+.optionPanel input[type = text]{
+    width: 100%;
+}
+
+.previewPanel{
+    float: right;
+    width: 50%;
+    padding: 2%;
+    background-color: blue;
+    text-align: center;
+}
+
+.optionPanel .searchbtn:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.previewPanel #searchResultBtn{
+    width: 100%;
+    text-align: left;
+}
+
+.previewPanel #searchResultBtn:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    transition-duration: 0.4s;
+}
+
+
+
