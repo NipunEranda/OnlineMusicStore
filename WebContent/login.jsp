@@ -16,26 +16,48 @@
 <body>
 	<%@ include file="components/header.jsp"%>
 	<div id="mainContainer">
+
 		<div id="login">
 			<center>
-				<h1>LOGIN</h1>
+				<div class="loginTop">
+					<label><b>Sign in</b></label>
+				</div>
 			</center>
-			<br />
-			<form action="LoginController" method="post">
+			<div class="loginForm">
 				<center>
-					<input type="text" name="email"
-						placeholder="email address or Username" /><br /> <br /> <input
-						type="password" name="password" placeholder="password" />
+					<div style="width: 80%;">
+						<form action="LoginController" method="post" name="login">
+							<center>
+								<input type="text" name="email"
+									placeholder="email address or Username" required="required" /><br /> <br /> <input
+									type="password" name="password" placeholder="password" required="required"/>
+							</center>
+							<br />
+							<%
+								if (request.getParameter("login") != null) {
+									if (request.getParameter("login").equals("fail")) {
+							%>
+							<center>
+								<div class="errorMessage">Login Failed</div>
+								<br/>
+							</center>
+							<%
+								}
+								}
+							%>
+
+							<div class="loginbtn"
+								onclick="document.forms['login'].submit();">Login</div>
+							<br /> <br /> <br /> <br />
+							<hr />
+							<br />
+							<center>Don't have an account?</center>
+							<br /> <br /> <a href="register.jsp"><div class="divBtn">Sign
+									Up for MuZy</div></a>
+						</form>
+					</div>
 				</center>
-				<br /> <br /> <input type="checkbox" name="remember" checked>Remember
-				Me <input type="submit" name="submit" value="Login" class="loginbtn">
-				<br /> <br />
-				<hr />
-				<br />
-				<center>Don't have an account?</center>
-				<br /> <br /> <a href="register.jsp"><div class="divBtn">Sign
-						Up for MuZy</div></a>
-			</form>
+			</div>
 		</div>
 	</div>
 	<div>

@@ -1,22 +1,37 @@
 @charset "UTF-8";
 
+body{
+    
+    background-color: lightgrey;
+
+}
+
+
 #profileContainer{
     float: left;
     margin-left: 25%;
     width: 50%;
-    background:rgba(0,0,0,.5);
+    background:rgba(255,255,255);
     padding-top: 1%;
     padding-bottom: 2%;
     margin-bottom: 5%;
+    border: 1px solid black;
 }
 
 #profileContainer img{
     width: 25%;
+    border-radius: 50%;
 }
 
 #profileContainer input[type=text]{
     margin-right: 25%;
     float: right;
+}
+
+#profileContainer .customSelect{
+	margin-right: 25%;
+	width: 16%;
+	float: right;
 }
 
 #profileContainer label{

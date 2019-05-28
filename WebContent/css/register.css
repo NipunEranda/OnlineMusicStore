@@ -1,13 +1,98 @@
+#mainContainer{
+	background:#333 url(../images/cover/register.jpg);
+	background-repeat: no repeat;
+}
+
+h2{
+	text-align: center;
+}
+.form h4{
+	font-color: black;
+}
+
 #reg-page{
-    background:rgba(0,0,0,0.3);
+   background:rgba(0,0,0,0.3);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 300px;
     padding: 2% 2% 2% 2%;
-    width: 60%;
+    width: 50%;
+    height:80%;
     color: white;
+    font-weight: bold;
+    float: center;
 }
 
-#reg-page input[type=text]{
-    width: 50%;
+#reg-page 
+input[type=text],[type=email],[type=password]{
+	float: center;
+    width:60%;
+  	padding:10px 5px;
+  	background:linear-gradient(#1f2124, #27292c);
+  	border:1px solid #222;
+  	box-shadow:0 1px 0 rgba(255,255,255,0.1);
+  	border-radius:0.3em;
+  	margin-bottom:20px;
+  	color: white;
+}
+
+#reg-page label{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: black;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.btnSet .submitButton{
+	display: inline-block;
+    color: #ffffff;
+  	background-color: red;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    border: solid 1px transparent;
+  	border-radius: 4px;
+}
+
+p a{
+	text-decoration: none;
+	background-color: Black;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    top:90px;
+    right:50px;
+    border-radius: 25px;
+    align: center;
+    margin:20px;
+}
+p a:hover {
+    background-color: grey;
+    transition-duration: 0.3s;
 }

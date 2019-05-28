@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body{
+    
+    background-color: lightgrey;
+
+}
+
+
+#profileContainer{
+    float: left;
+    margin-left: 25%;
+    width: 50%;
+    background:rgba(0,0,0,.5);
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+#profileContainer img{
+    width: 25%;
+}
+
+#profileContainer input[type=text]{
+    margin-right: 25%;
+    float: right;
+}
+
+#profileContainer input[type=date]{
+    margin-right: 25%;
+    float: right;
+}
+
+#profileContainer .customSelect{
+	width: 16%;
+	margin-right: 25%;
+    float: right;
+}
+
+#profileContainer label{
+    margin-left: 25%;
+    float: left;
+}
+
+#profileContainer .updateUser{
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    margin-left: 31%;
+    margin-right: 1%;
+}
+
+#profileContainer .cancel{
+    background-color: #008CBA;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}
+
+#profileContainer .removeUser{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    margin-left: 1%;
+}

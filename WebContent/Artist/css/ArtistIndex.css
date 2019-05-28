@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("../../images/Artist/background.jpg");
+}
+
+.main {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 200px;
+}
+
+.main .row1 {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.main .row2 {
+	width: 100%;
+}
+
+.row1 #leftBtn{
+	width: 17%;
+	float: left;
+	padding: 2%;
+	margin-left: 25%;
+	background-color: red;
+	text-align: center;
+}
+
+.row1 #rightBtn{
+	width: 17%;
+	padding: 2%;
+	float: left;
+	margin-left: 5%;
+	margin-right: 10%;
+	background-color: blue;
+	text-align: center
+}
+
+.row2 #middleBtn{
+	width: 43%;
+	padding: 2%;
+	float: left;
+	margin-left: 25%;
+	background-color: yellow;
+	text-align: center;
+}

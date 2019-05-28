@@ -35,12 +35,6 @@
 			<div class="btnset">
 				<div class="logbtn" onclick="location.href='login.jsp'">Login</div>
 				<div class="regbtn" onclick="location.href='register.jsp'">Register</div>
-				<form action="GuestLoginController" method="post" name="guestLogin">
-					<div class="guestbtn" name="guest"
-						onclick="document.forms['guestLogin'].submit();">Surf as a
-						Guest</div>
-				</form>
-				
 			</div>
 		</div>
 

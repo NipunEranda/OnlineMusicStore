@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#mainContainer #statPanel{
+	margin-top: 3%;
+	width: 60%;
+	margin-left: 24%;
+}
+
+#statPanel #row1{
+	width: 100%;
+}
+
+#statPanel #row2{
+	width: 100%;
+}
+
+#row1 .row1_left{
+	text-align: center;
+	background-color: red;
+	float: left;
+	width: 40%;
+	margin-right: 5%;
+	padding-top: 0px;
+	padding-bottom: 2%;
+}
+
+#row1 .row1_right{
+	text-align: center;
+	background-color: blue;
+	float: left;
+	width: 40%;
+	padding-top: 0px;
+	padding-bottom: 2%;
+}
+
+#row2 .row2_left{
+	text-align: center;
+	background-color: yellow;
+	float: left;
+	width: 40%;
+	margin-right: 5%;
+	padding-top: 0px;
+	padding-bottom: 2%;
+}
+
+#row2 .row2_right{
+	text-align: center;
+	background-color: green;
+	float: left;
+	width: 40%;
+	padding-top: 0px;
+	padding-bottom: 2%;
+}

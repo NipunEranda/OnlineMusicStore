@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body{
+    
+    background-color: lightgrey;
+    background:#333 url(../images/cover/userProfile.jpg);
+	
+
+}
+
+
+#profileContainer{
+    float: left;
+    margin-left: 25%;
+    width: 50%;
+    background:rgba(0,0,0,.5);
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+#profileContainer img{
+    width: 25%;
+}
+
+#profileContainer input[type=text]{
+    margin-right: 25%;
+    float: right;
+    float: center;
+    width:30%;
+  	padding:4px 5px;
+  	background:#555753;
+  	border:1px solid #222;
+  	box-shadow:0 1px 0 rgba(255,255,255,0.1);
+  	border-radius:0.3em;
+  	margin-bottom:10px;
+  	color: white;
+}
+
+#profileContainer label{
+    margin-left: 25%;
+    float: left;
+    font-weight:bold;
+    font-size:20px;
+    color: white;
+}
+
+#profileContainer h1{
+	color: white;
+}
+
+#profileContainer .updateUser{
+    background-color: #edd400;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    margin-left: 38%;
+    margin-right: 3%;
+    border: solid 1px transparent;
+  	border-radius: 4px;
+  	display: inline-block;
+}
+
+#profileContainer .cancel{
+    background-color: #75507b;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    border: solid 1px transparent;
+  	border-radius: 4px;
+  	margin: 2px 0;
+  	display: inline-block;
+}
+
+#profileContainer .removeUser{
+    background-color: #a40000;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    margin-left: 1%;
+    border: solid 1px transparent;
+  	border-radius: 4px;
+  	display: inline-block;
+}

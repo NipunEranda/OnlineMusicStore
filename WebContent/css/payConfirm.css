@@ -1,0 +1,56 @@
+#mainContainer{
+	background:#333 url(../images/cover/payThank.jpg);
+	background repeat: no repeat;
+}
+
+h2{
+	text-align: center;
+	color: black;
+	weight:bold;
+	font-size: 100px;
+}
+
+h4{
+	text-align: center;
+	font-weight:bold;
+	font-size: 20px;
+}
+
+.img {
+	float: center;
+	align: center;
+}
+#pay-page{
+   background:rgba(0,0,0,0.3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    padding: 2% 2% 2% 2%;
+    width: 60%;
+    height:80%;
+    color: white;
+    font-weight: bold;
+    float: center;
+}
+#pay-page img{
+	align:center;
+}
+
+#pay-page a{
+	text-decoration: none;
+	background-color: #f57900;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    top:90px;
+    right:50px;
+    border-radius: 25px;
+    align: center;
+    margin:20px;
+}
+#pay-page a:hover {
+    background-color: green;
+    transition-duration: 0.3s;
+}

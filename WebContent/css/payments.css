@@ -1,0 +1,57 @@
+#mainContainer{
+	background:#333 url(../images/cover/payments.jpg);
+	background-repeat: no-repeat;
+	height: 150;
+  	width: 150;
+}
+
+h2{
+	text-align: center;
+}
+.form h4{
+	font-color: black;
+}
+
+#pay-page{
+   background:rgba(0,0,0,0.3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    padding: 2% 2% 2% 2%;
+    width: 40%;
+    height:50%;
+    color: white;
+    font-weight: bold;
+    float: center;
+}
+
+#pay-page label{
+	font-size:20px;
+	font-weight:bold;
+}
+
+#pay-page 
+input[type=text]{
+	float: center;
+    width:50%;
+  	padding:8px 5px;
+  	background:linear-gradient(#1f2124, #27292c);
+  	border:1px solid #222;
+  	box-shadow:0 1px 0 rgba(255,255,255,0.1);
+  	border-radius:0.3em;
+  	margin-bottom:20px;
+  	color: white;
+}
+
+.btnSet .submitButton{
+	display: inline-block;
+    color: #ffffff;
+  	background-color: #f57900;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    border: solid 1px transparent;
+  	border-radius: 4px;
+}

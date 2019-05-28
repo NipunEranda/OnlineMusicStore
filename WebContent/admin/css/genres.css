@@ -1,0 +1,151 @@
+body{
+    
+    background-color: lightgrey;
+
+}
+
+#mainContainer .genresContainer{
+    border: 1px solid black;
+    background-color: white;
+    float: left;
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+.genresContainer .previewPanel{
+    border: 1px solid black;
+    padding-left: 2%;
+    padding-top: 2%;
+    height: 380px;
+    float: left;
+    width: 25%;
+    background-color: white;
+    margin-left: 2%;
+    overflow-y: scroll;
+}
+
+.genresContainer .optionPanel{
+    border: 1px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    height: 380px;
+    float: left;
+    margin-left: 5%;
+    width: 25%;
+    background-color: white;
+    margin-right: 2%;
+}
+
+.genresContainer .commandPanel{
+    padding-top: 2%;
+    height: 380px;
+    float: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.previewPanel table {
+	color: #333; /* Lighten up font color */
+	font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.previewPanel td, th {
+	border: 1px solid #CCC;
+	height: 30px;
+} /* Make cells a bit taller */
+.previewPanel th {
+	background: #F3F3F3; /* Light grey background */
+	font-weight: bold; /* Make sure they're bold */
+}
+
+.previewPanel td {
+	background: #FAFAFA; /* Lighter grey background */
+	text-align: center; /* Center our text */
+}
+
+.addGenre{
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 92%;
+    border: 1px solid black;
+}
+
+.addGenre .closebtn{
+	background-color: red;
+	width: 10%;
+	color: white;
+	padding: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+	float: left;
+}
+
+.addGenre input[type = text]{
+    margin-right: 5%;
+}
+
+.previewPanel td:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.updateForm{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.updateForm label{
+    float: left;
+}
+
+.updateForm input[type=text]{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.commandPanel .updateGenre{
+    background-color: #4CAF50;
+    width: 50%;
+    color: white;
+    padding: 5px;
+    margin-left: 24%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}
+.commandPanel .removeGenre{
+    background-color: red;
+    width: 50%;
+    color: white;
+    padding: 5px;
+    margin-left: 24%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}
+
+.genreAdd{
+    background-color: #4CAF50;
+    width: 10%;
+    color: white;
+    padding: 5px;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}

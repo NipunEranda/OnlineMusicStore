@@ -12,18 +12,30 @@
 		<servlet-name>LoginController</servlet-name>
 		<url-pattern>/LoginController</url-pattern>
 	</servlet-mapping>
-
-    <servlet>
-    <description></description>
-        <display-name>GuestLoginController</display-name>
-		<servlet-name>GuestLoginController</servlet-name>
-        <servlet-class>com.sliit.GuestLoginController</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>GuestLoginController</servlet-name>
-		<url-pattern>/GuestLoginController</url-pattern>
-    </servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>CartController</display-name>
+		<servlet-name>CartController</servlet-name>
+		<servlet-class>com.sliit.CartController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartController</servlet-name>
+		<url-pattern>/CartController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>RegisterController</display-name>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>com.sliit.RegisterController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/RegisterController</url-pattern>
+	</servlet-mapping>
 
     <servlet>
     <description></description>
@@ -37,7 +49,6 @@
 		<url-pattern>/UserSearch</url-pattern>
     </servlet-mapping>
 
-<<<<<<< HEAD
     <servlet>
     <description></description>
         <display-name>UpdateUsers</display-name>
@@ -61,7 +72,6 @@
         <servlet-name>RemoveUsers</servlet-name>
 		<url-pattern>/RemoveUsers</url-pattern>
     </servlet-mapping>
-=======
->>>>>>> 03077ad586be26d6fa9d0ea6801ad6a7ed818270
+    
 
 </web-app>

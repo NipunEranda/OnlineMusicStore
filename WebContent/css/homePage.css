@@ -1,0 +1,334 @@
+#mainContainer .wrap {
+	height: 800px;
+}
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 5;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-image: url("../images/cover/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+.txt-rt {
+	text-align: right;
+} /* text align right */
+.txt-lt {
+	text-align: left;
+} /* text align left */
+.txt-center {
+	text-align: center;
+} /* text align center */
+.float-rt {
+	float: right;
+} /* float right */
+.float-lt {
+	float: left;
+} /* float left */
+.clear {
+	clear: both;
+} /* clear float */
+.pos-relative {
+	position: relative;
+} /* Position Relative */
+.pos-absolute {
+	position: absolute;
+} /* Position Absolute */
+.vertical-base {
+	vertical-align: baseline;
+} /* vertical align baseline */
+.vertical-top {
+	vertical-align: top;
+} /* vertical align top */
+img {
+	max-width: 100%;
+}
+
+/*--slider--*/
+#slider {
+	margin: 0 auto;
+}
+
+.coin-slider {
+	width: 100%;
+	padding: 25px 13px 0 13px;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+}
+
+.coin-slider a {
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+.cs-buttons {
+	font-size: 0px;
+	padding: 10px;
+	float: left;
+}
+
+.cs-buttons a {
+	margin-left: 5px;
+	height: 10px;
+	width: 10px;
+	float: left;
+	border: 1px solid #999;
+	color: #B8C4CF;
+	text-indent: -1000px;
+}
+
+.cs-active {
+	background-color: #999;
+	color: #FFFFFF;
+}
+
+.cs-title {
+	width: 980px;
+	padding: 20px 10px;
+	background-color: #000000;
+	color: #FFFFFF;
+	line-height: 1.5em;
+}
+
+.cs-prev, .cs-next {
+	background-color: rgba(0, 0, 0, 0.19);
+	color: rgba(255, 255, 255, 0.33);
+	padding: 0px 10px;
+}
+
+/*--content--*/
+.content {
+	float: left;
+	width: 100%;
+}
+
+/*sub-cont*/
+.sub-cont h1 {
+	font-size: 14px;
+	padding: 7px 12px;
+	background: #333;
+	color: #aaa;
+	width: 100%;
+}
+/*gallery*/
+.gallery li {
+	margin: 40px 22px 40px 30;
+	float: left;
+	padding: 10px;
+	border: 1px solid #eee;
+	background: #fff;
+	box-shadow: 0 0 6px #888;
+}
+
+.gallery h3 {
+	color: #165d88;
+	padding: 10px 0;
+	text-align: center;
+	background: #fff;
+	font-size: 18px;
+}
+
+.gallery li:nth-child(3), .gallery li:nth-child(6) {
+	margin-right: 0;
+}
+
+.gallery p {
+	color: #999;
+	background: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+.gallery button {
+	background: #333;
+	border: none;
+	color: #aaa;
+	padding: 5px 10px;
+	margin: 10px 0 0 55px;
+}
+
+.gallery button:hover {
+	background: #1d1d1d;
+	color: #eee;
+}
+
+.gallery li:hover {
+	cursor: pointer;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px #ccc;
+}
+/*----Album---*/
+.album {
+	margin: 20px 0;
+	background: #e5e5e5;
+	padding: 30px;
+}
+
+.album-pic {
+	float: left;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px #aaa;
+}
+
+.album-data {
+	float: left;
+	width: 400px;
+	margin-left: 30px;
+}
+
+.album-data h3 {
+	color: #333;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.album-data p {
+	color: #777;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+p.rate {
+	font-size: 16px;
+	color: #06f;
+}
+
+.btn a {
+	color: #aaa;
+	padding: 5px 10px;
+	font-size: 12px;
+	background: #333;
+	border: 1px solid #2a2a2a;
+}
+
+.btn {
+	margin-top: 10px;
+}
+
+.btn a:hover {
+	background: #222;
+	color: #eee;
+}
+
+/*--responsive--*/
+@media ( max-width :1050px) {
+	.wrap {
+		margin: 0px auto;
+		width: 945px;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media ( max-width :1024px) {
+}
+
+@media ( max-width :991px) {
+	.wrap {
+		margin: 0px auto;
+		width: 897px;
+	}
+}
+
+@media ( max-width :900px) {
+	.wrap {
+		margin: 0px auto;
+		width: 820px;
+	}
+}
+
+@media ( max-width :800px) {
+	.wrap {
+		margin: 0px auto;
+		width: 700px;
+	}
+}
+
+@media ( max-width :736px) {
+	.wrap {
+		margin: 0px auto;
+		width: 627px;
+	}
+	.right {
+		float: none;
+		text-align: center;
+	}
+}
+
+@media ( max-width :667px) {
+	.wrap {
+		margin: 0px auto;
+		width: 553px;
+	}
+}
+
+@media ( max-width :640px) {
+	.wrap {
+		margin: 0px auto;
+		width: 524px;
+	}
+	.gallery li {
+		margin: 6px 6px;
+		float: left;
+		padding: 15px;
+		width: 40%;
+	}
+	.album-data {
+		float: left;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 17px;
+	}
+}
+--
+*
+/

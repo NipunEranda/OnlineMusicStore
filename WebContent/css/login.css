@@ -1,112 +1,217 @@
 @charset "UTF-8";
 
-#mainContainer{
-    background-image: url("../images/cover/cover7.png");
+#mainContainer {
+	background-image: url("../images/cover/cover7.png");
 }
 
-#login h1{
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#login {
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0, 0, 0, .7);
+	padding-bottom: 5%;
+	color: white;
+	border-radius: 20px 20px 20px 20px;
 }
 
-#login{
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%;
-    padding:3% 5% 5% 5%;
-    background:rgba(0,0,0,0.5);
-    color: white;
+#login .loginTop {
+	margin-bottom: 15%;
+	background-color: #FF6347;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius: 20px 20px 0 0;
 }
 
-#login input[type = text]{  
-    width: 95%;
-    line-height: 30px;
-    font-size: 15px;
+.loginTop label {
+	color: white;
+	font-size: 35px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	font-size: 35px;
 }
 
-#login input[type = password]{
-    width: 95%;
-    line-height: 30px;
-    font-size: 15px;
+#login input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
 }
 
-.loginbtn{
-    float: right;
-    width: 30%;
-    height: 35px;
-    border: 1px solid black;
-    border-radius: 25px;
+/* Place Holder CSS */
+::-webkit-input-placeholder {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-.divBtn{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 25px;
+:-moz-placeholder {
+	opacity: 0.5;
+	-moz-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-#login a{
-    text-decoration: none;
+::-moz-placeholder {
+	opacity: 0.5;
+	-moz-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-.divBtn:hover{
-    background-color: tomato;
-    color: white;
-    transition-duration: 0.3s;
+:-ms-input-placeholder {
+	opacity: 0.5;
+	-ms-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-.loginbtn:hover{
-    background-color: grey;
-    color: black;
-    transition-duration: 0.3s;
-    cursor: pointer;
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+	opacity: 0.75;
+	-webkit-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-@media screen and (max-width: 940px){
-    .loginbtn{
-        width: 30%;
-    }
-
-    #login{
-        margin-top: 100px;
-        width: 60%;
-        padding:3% 5% 5% 5%;
-        background:rgba(0,0,0,0.5);
-        color: white;
-    }
-
+:hover:-moz-placeholder {
+	opacity: 0.75;
+	-moz-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-@media screen and (max-width: 1305px){
-
-    #login{
-        margin-top: 100px;
-    }
-
+:hover::-moz-placeholder {
+	opacity: 0.75;
+	-moz-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 
-@media screen and (max-width: 700px){
+:hover:-ms-input-placeholder {
+	opacity: 0.75;
+	-ms-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
+}
 
-    .loginbtn{
-        width: 30%;
-    }
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
+}
 
-    #login{
-        width: 80%;
-        padding:3% 5% 5% 5%;
-        background:rgba(0,0,0,0.5);
-        color: white;
-    }
+:focus:-moz-placeholder {
+	opacity: 0;
+	-moz-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
+}
 
-    .footercontainer{
-        height: 600px;
-    }
+:focus::-moz-placeholder {
+	opacity: 0;
+	-moz-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
+}
 
+:focus:-ms-input-placeholder {
+	opacity: 0;
+	-ms-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
+}
+
+#login input[type=text]::placeholder {
+	color: black;
+	font-size: 15px;
+}
+
+#login input[type=password]::placeholder {
+	color: black;
+	font-size: 15px;
+}
+
+#login input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+}
+
+.loginbtn {
+	float: right;
+	width: 30%;
+	text-align: center;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	padding: 10px;
+	background-color: tomato;
+}
+
+#login a {
+	text-decoration: none;
+}
+
+.loginbtn:hover {
+	background-color: white;
+	color: black;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.divBtn {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.divBtn:hover {
+	background-color: tomato;
+	color: black;
+	transition-duration: 0.3s;
+}
+
+#mainContainer .errorMessage {
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+
+@media screen and (max-width: 992px) {
+	.loginbtn {
+		width: 30%;
+	}
+	#login {
+		width: 60%;
+		padding: 3% 5% 5% 5%;
+		color: white;
+	}
+	#mainContainer .errorMessage {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#login {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.loginbtn {
+		width: 30%;
+	}
+	#login {
+		width: 80%;
+	}
+	.footercontainer {
+		height: 600px;
+	}
+	#mainContainer {
+		padding-top: 0px;
+		padding-bottom: 100px;
+	}
 }
